@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const ownerSchema = mongoose.Schema({
+const adminSchema = mongoose.Schema({
   fullname: String,
   email: String,
   password: String,
@@ -12,4 +12,4 @@ const ownerSchema = mongoose.Schema({
   gstno: String,
 });
 
-module.exports = mongoose.model("owner", ownerSchema);
+module.exports = mongoose.model("admin", adminSchema);
